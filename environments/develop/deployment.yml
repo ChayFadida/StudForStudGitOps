@@ -17,6 +17,9 @@ spec:
         app: stud-for-stud
         environment: development
     spec:
+      securityContext:
+        runAsUser: 1000
+        fsGroup: 1000  
       containers:
         - name: stud-for-stud
           image: harbor.chay-techs.com/studforstud/studforstud-app:develop_3fe72a0
