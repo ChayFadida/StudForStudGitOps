@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stud-for-stud-service
+  namespace: stud-for-stud-development
+  labels:
+    app: stud-for-stud
+    environment: development
+spec:
+  selector:
+    app: stud-for-stud
+  ports:
+    - protocol: TCP
+      port: 443
+      targetPort: 5000
+  type: ClusterIP
