@@ -1,0 +1,16 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: harbor-registry-key
+  namespace: stud-for-stud-production
+spec:
+  encryptedData:
+    .dockerconfigjson: AgAHodL87PnliQ5J3uYh0+ELG0ExRua0cBoEVO8RvnvQtX3baI9K0O/YzLQSfX5LDhUSV9G5IuxDVOsItU4Pkl8aM1K/omLWxIRx33Cksgyw8EkEqEsPI1Xt41l+mOVKi27BNLSoAKte8HPi5JCG84EOMAdqy2Ztl4bFUY8Q84QZXxoRDRrlEtp3aDRxkT6YaVBlds47k7c5Fz8mJe6tbLmMS8viQYBNLTv9OJAbNN0XR28pDL0NPKb4NN6c1HHXFbxGFXlhsUbXQ0af9RILllQ4xzHN/cMImIYf4yz5YoxhdhQblIRvBzCd3op+kmpp9q6I2E2n953BpoQu+XIwA2zhfwKT2PEZa3Ck81X8J45tQiScsmtIcbfmFm1byGraHwQxyJcOiv/WR/nfEGgpiEUUy02/DMxjVixMYEQIV7zC16j/6Hxd3jDOGyb1aMBd5AGUejG3ok6N6/IBXV28JwCC766JM+TE166O43Nn3gkrWr0fbpFZoDL/SQH90GagOpan6dG9+1w9f9Y8KVHwEEdsDumBHoK5UU1ebkeSnteouYBtMKYOV0rKbV6OU4RpJkqboY8DO4YFfUXkJfNgbIFuCtw8OxyC0G+BkyeRG04HbV9uu5uWkr9X+PhyMdvjcS2kKIJoID0+dtdbTb/wF/Jitr5ROXf8F43wYBQ0mb6FKij0NbwW0wACTchrHJZ+lGdlOh19XRvt87mssktPo8sIkKnyyBTyFeke4KyecTOvLzSQxLLn1JFFnE9o0lpzSlttpcgxD0UDYDGe6UTLDiT9pn6pjmKhI78p/XZtTqTows8g5grG
+  template:
+    metadata:
+      creationTimestamp: null
+      name: harbor-registry-key
+      namespace: stud-for-stud-production
+    type: kubernetes.io/dockerconfigjson
+

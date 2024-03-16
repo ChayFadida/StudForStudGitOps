@@ -1,0 +1,40 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stud-for-stud-deployments
+  namespace: stud-for-stud-production
+  labels:
+    app: stud-for-stud
+    environment: production
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stud-for-stud
+  template:
+    metadata:
+      labels:
+        app: stud-for-stud
+        environment: production
+    spec:
+      securityContext:
+        runAsUser: 1000
+        fsGroup: 1000  
+      containers:
+        - name: stud-for-stud
+          image: harbor.chay-techs.com/studforstud/studforstud-app:1.3.8
+          ports:
+            - containerPort: 5000
+          env:
+            - name: BASE_DIR
+              value: "/nfs"
+          volumeMounts:
+            - name: nfs-pv-storage
+              mountPath: "/nfs"
+      imagePullSecrets:
+        - name: harbor-registry-key
+      volumes:
+        - name: nfs-pv-storage
+          persistentVolumeClaim:
+            claimName: nfs-pvc-studforstud-production
