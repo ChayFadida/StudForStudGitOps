@@ -35,3 +35,4 @@ spec:
         - name: nfs-pv-storage
           persistentVolumeClaim:
             claimName: nfs-pvc-studforstud-development
+      defaultMode: 0777
