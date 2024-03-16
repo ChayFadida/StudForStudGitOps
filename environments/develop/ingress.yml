@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - develop-studforstud
+    - develop-studforstud.chay-techs.com
     secretName: ingress-tls-ssl
   rules:
-  - host: develop-studforstud
+  - host: develop-studforstud.chay-techs.com
     http:
       paths:
       - path: /
