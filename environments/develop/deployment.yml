@@ -28,7 +28,6 @@ spec:
           volumeMounts:
             - name: nfs-pv-storage
               mountPath: "/nfs"
-              readOnly: false  # Ensure it's not read-only
       imagePullSecrets:
         - name: harbor-registry-key
       volumes:
