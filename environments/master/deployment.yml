@@ -23,7 +23,7 @@ spec:
         fsGroup: 1000  
       containers:
         - name: stud-for-stud
-          image: harbor.chay-techs.com/studforstud/studforstud-app:master_9413dcf
+          image: harbor.chay-techs.com/studforstud/studforstud-app:master_e894a17
           ports:
             - containerPort: 5000
           env:
