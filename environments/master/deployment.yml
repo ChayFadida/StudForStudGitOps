@@ -18,6 +18,8 @@ spec:
         app: stud-for-stud
         environment: production
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: yechezkeserver
       securityContext:
         runAsUser: 1000
         fsGroup: 1000  
