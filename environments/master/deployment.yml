@@ -19,7 +19,7 @@ spec:
         environment: production
     spec:
       nodeSelector:
-        kubernetes.io/hostname: yechezkeserver
+        kubernetes.io/hostname: lenovoserver
       securityContext:
         runAsUser: 1000
         fsGroup: 1000  
