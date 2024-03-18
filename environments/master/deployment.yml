@@ -18,8 +18,6 @@ spec:
         app: stud-for-stud
         environment: production
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: lenovoserver
       securityContext:
         runAsUser: 1000
         fsGroup: 1000  
