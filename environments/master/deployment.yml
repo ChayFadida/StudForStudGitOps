@@ -30,7 +30,7 @@ spec:
             - name: BASE_DIR
               value: "/nfs"
             - name: APP_VERSION
-              value: "develop_ce3c7f7"
+              value: "master_e894a17"
             - name: APP_ENVIRONMENT
               value: "production"
           volumeMounts:
