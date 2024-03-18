@@ -29,6 +29,10 @@ spec:
           env:
             - name: BASE_DIR
               value: "/nfs"
+            - name: APP_VERSION
+              value: "develop_ce3c7f7"
+            - name: APP_ENVIRONMENT
+              value: "production"
           volumeMounts:
             - name: nfs-pv-storage
               mountPath: "/nfs"
