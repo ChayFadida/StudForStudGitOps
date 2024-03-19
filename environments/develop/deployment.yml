@@ -32,6 +32,8 @@ spec:
               value: "develop_ce3c7f7"
             - name: APP_ENVIRONMENT
               value: "development"
+            - name: LOG_LEVEL
+              value: "debug"
           volumeMounts:
             - name: nfs-pv-storage
               mountPath: "/nfs"
