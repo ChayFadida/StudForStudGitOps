@@ -16,7 +16,7 @@ spec:
             kubernetes.io/hostname: yechezkeserver 
           containers:
             - name: stud-for-stud-frontend
-              image: harbor.chay-techs.com/studforstud/studforstud-app:master_aaeb7cc
+              image: harbor.chay-techs.com/studforstud/studforstud-app:master_4e7df80
               command: ["python", "cloud-backup.py"]
               volumeMounts:
               - name: nfs-backup-volume
