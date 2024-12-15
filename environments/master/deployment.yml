@@ -23,14 +23,14 @@ spec:
         fsGroup: 1000  
       containers:
         - name: stud-for-stud
-          image: harbor.chay-techs.com/studforstud/studforstud-app:master_def1b08
+          image: harbor.chay-techs.com/studforstud/studforstud-app:master_301b695
           ports:
             - containerPort: 5000
           env:
             - name: BASE_DIR
               value: "/nfs"
             - name: APP_VERSION
-              value: "master_def1b08"
+              value: "master_301b695"
             - name: APP_ENVIRONMENT
               value: "production"
           volumeMounts:
